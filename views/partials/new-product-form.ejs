@@ -1,0 +1,57 @@
+<section id="form" class="container">
+    <h3>Add A Product</h3>
+    <form action="/products" method="POST">
+        <div class="row">
+            <div class="col">
+                <label class="form-label" for="name">Product Name</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="product name">
+            </div>
+            <div class="col">
+                <label class="form-label" for="price">Price ($)</label>
+                <input class="form-control" type="number" id="price" name="price" placeholder="price">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <label class="form-label" for="local">local/online?</label>
+                <select class="form-select" name="local" id="local">
+                    <option value="true">Image file is local</option>
+                    <option value="false">Image file is online</option>
+                </select>
+            </div>
+            <div class="col-9">
+                <label class="form-label" for="url">URL</label>
+                <input class="form-control" type="text" id="url" name="url" placeholder="url">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label class="form-label" for="manufacturer">Select Ship Manufacturer:</label>
+                <select class="form-select" name="manufacturer" id="manufacturer">
+                    <option value="RSI">RSI</option>
+                    <option value="crusader">crusader</option>
+                    <option value="drake">drake</option>
+                    <option value="anvil">anvil</option>
+                    <option value="aegis">aegis</option>
+                </select>
+            </div>
+            <div class="col">
+                <label class="form-label" for="type">Select Ship Role:</label>
+                <select class="form-select" name="type" id="type">
+                    <option value="cargo">cargo</option>
+                    <option value="fighter">fighter</option>
+                    <option value="capital">capital</option>
+                    <option value="all round">all round</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button id="btn" class="w-100 btn-primary btn-lg">Create</button>
+            </div>
+        </div>
+
+    </form>
+</section>

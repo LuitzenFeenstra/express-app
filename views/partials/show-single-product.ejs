@@ -1,0 +1,35 @@
+<section id="show" class="container">
+    <h3>
+        <%= product.manufacturer %>
+            <%= product.name %>
+    </h3>
+
+    <img id="prod-img" src="<%= product.local === true ? `../${product.url}` :  product.url %>" class="mx-auto d-block" alt="image">
+    <div>
+        <ul>
+            <li>
+                Name: <%= product.name %>
+            </li>
+            <li>
+                Price: $<%= product.price %>
+            </li>
+            <li>
+                Image url: <%= product.url %>
+            </li>
+            <li>
+                Manufacturer: <%= product.manufacturer %>
+            </li>
+            <li>
+                Role: <%= product.type %>
+            </li>
+        </ul>
+
+
+        <div id="buttons" class="d-grid gap-2 col-5 mx-auto">
+            <a class="btn btn-secondary" href="/products/<%=product._id%>/edit">Edit Product</a>
+            <form class="d-grid gap-2 col-12 mx-auto" action="/products/<%=product._id%>?_method=DELETE" method="POST">
+                <button class="btn btn-secondary">Delete Product</button>
+            </form>
+        </div>
+    </div>
+</section>

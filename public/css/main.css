@@ -1,0 +1,164 @@
+
+body {
+    background-color: darkgray;
+}
+
+/*fits the opening carousel in screen size and sets static background*/
+#carousel {
+    background-image: url('../images/rand-pics/stars.jpg');
+    object-fit: contain;
+}
+#carousel #caroImg {
+    height: 100vh;
+    width: 100vh;
+    object-fit: contain;
+}
+.title {
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*nav menu*/
+.logo {
+    height: 50px;
+    Width: 55px;
+}
+#mainHeader {
+    background-color: rgba(0,0,0,0.35);
+}
+#mainHeader .nav-link {
+    color:white;
+}
+/*nav drop menu (note to self, the order matters)*/
+#mainHeader .dropdown-menu .dropdown-item {
+    color :white;
+}
+#mainHeader .dropdown-menu .dropdown-divider {
+    color :white;
+}
+#mainHeader .dropdown-menu{
+    background-color: rgba(0,0,0,0.35);
+}
+#mainHeader .dropdown-menu :hover{
+    color :black;
+}
+
+/* product tags */
+#productTags h3 {
+    text-align: center;
+    margin-top: 3rem;
+}
+#productTags {
+    margin-top: 1.5rem;
+}
+#productTags .col-lg-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+}
+#productTags .row :hover {
+    background-color: dimgray;
+    color: white ;
+}
+#productTags h4 {
+    font-weight: 400;
+}
+#productTags .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+#productTags img {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+#productTags .btn-secondary {
+    background-color: gray;
+}
+
+/* color picker */
+#colorPicker h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+#colorDisplay{
+    text-align: center;
+}
+#colorPicker .btn-group {
+    width: 100%;
+}
+#colorPicker .btn {
+    border-color: black;
+}
+/* color buttons */
+#colorPicker #clrbtn1 {
+    background-color: rgb(255, 215, 0);
+}
+#colorPicker #clrbtn2 {
+    background-color: rgb(0, 191, 255);
+}
+#colorPicker #clrbtn3 {
+    background-color: rgb(255, 69, 0);
+}
+#colorPicker #clrbtn4 {
+    background-color: rgb(220, 220, 220);
+}
+#colorPicker #clrbtn5 {
+    background-color: rgb(70, 70, 70);
+}
+#colorPicker #clrbtn6 {
+    background-color: rgb(180, 0, 0);
+}
+#colorPicker #clrbtn7 {
+    background-color: rgb(140, 140, 140);
+}
+#colorPicker #clrbtn8 {
+    background-color: rgb(3, 80, 150);
+}
+#colorPicker {
+    position:relative;
+}
+#colorPicker #colorDisplay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* show product */
+#show h3 {
+    text-align: center;
+    margin-top: 3rem;
+}
+#show {
+    margin-top: 4rem;
+}
+#show #prod-img {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    max-width: 80%;
+}
+#show #buttons {
+    margin-bottom: 1.5rem;
+}
+
+/* Form new/edit styling */
+#form {
+    margin-top: 4rem;
+}
+#form h3 {
+    text-align: center;
+}
+
+#form button {
+    margin-top: 1.5rem;
+    background-color: gray;
+    border-color: black;
+}

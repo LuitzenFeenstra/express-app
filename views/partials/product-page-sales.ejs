@@ -1,0 +1,21 @@
+<section id="productTags" class="container border-top">
+    <h3>Products</h3>
+    <div class="row">
+        <% for(let product of products) { %>
+            <div class="col-lg-4">
+                <img src="<%=product.url%>" class="mx-auto d-block" alt="image">
+                <h4>
+                    <%=product.name%>
+                </h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptates, adipisci
+                    quo
+                    omnis dolore
+                    optio, nobis itaque distinctio ipsa deserunt velit ab provident aspernatur, perspiciatis
+                    nam
+                    enim sapiente!
+                    Facilis, sapiente.</p>
+                <p><a class="btn btn-secondary" href="/products/<%=product.id%>">US$<%=product.price%>&raquo;</a></p>
+            </div>
+            <% } %>
+    </div>
+</section>
